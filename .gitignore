@@ -1,0 +1,49 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+
+# FastAPI-specific
+instance/
+*.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Test files
+.coverage
+nosetests.xml
+test_*.xml
+coverage.xml
+*.cover
+
+# Python package distribution
+dist/
+build/
+*.egg-info/
+
+# Docker files
+*.log
+docker-compose.override.yml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# MySQL/PostgreSQL database files (if you use them in the project)
+*.sql
+*.sqlite3
+
+# Environment variable files (e.g. .env, .env.local)
+.env
+.env.local
+
+# FastAPI config files
+*.pkl
