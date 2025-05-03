@@ -1,0 +1,22 @@
+[project]
+name = "fastapi_fundamentals"
+version = "0.1.0"
+description = ""
+authors = [{ name = "phnglh", email = "phonghngle@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "uvicorn[standard] (>=0.34.0,<0.35.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "sqlalchemy (>=2.0.40,<3.0.0)",
+    "aiosqlite (>=0.21.0,<0.22.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "api", from = "src" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
