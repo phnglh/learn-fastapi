@@ -565,71 +565,6 @@ gssapi = ["gssapi (==1.8.3)"]
 telemetry = ["opentelemetry-api (==1.18.0)", "opentelemetry-exporter-otlp-proto-http (==1.18.0)", "opentelemetry-sdk (==1.18.0)"]
 
 [[package]]
-name = "mysqlx-connector-python"
-version = "9.3.0"
-description = "A Python driver which implements the X DevAPI, an Application Programming Interface for working with the MySQL Document Store."
-optional = false
-python-versions = ">=3.9"
-groups = ["main"]
-files = [
-    {file = "mysqlx-connector-python-9.3.0.tar.gz", hash = "sha256:29c30c29043bfdb04fd9b05de4834421c97c09d67bd7c6279c5e448adf5c4d27"},
-    {file = "mysqlx_connector_python-9.3.0-cp310-cp310-macosx_14_0_arm64.whl", hash = "sha256:994a8e26f62cae21901b256f52fed7207a7996d4b249d9170991ce97c5f79251"},
-    {file = "mysqlx_connector_python-9.3.0-cp310-cp310-macosx_14_0_x86_64.whl", hash = "sha256:8debf06a2a3156f7d8f28315fbf1645964995a33cc8aa67215ff7729e99e9121"},
-    {file = "mysqlx_connector_python-9.3.0-cp310-cp310-manylinux_2_28_aarch64.whl", hash = "sha256:b3bcf8463e1773c861e3618579247d1fcffb78eefa37af8f2988c82ed896aff5"},
-    {file = "mysqlx_connector_python-9.3.0-cp310-cp310-manylinux_2_28_x86_64.whl", hash = "sha256:58e8340de3d283aef1ab035fd857d23cd884c8a4135d554a8e5cc6068cfd6f80"},
-    {file = "mysqlx_connector_python-9.3.0-cp310-cp310-win_amd64.whl", hash = "sha256:f59b1b79f96c0d5ff22fd3c40c0f740ee9809e1d93ac58becc915305c90b3ad9"},
-    {file = "mysqlx_connector_python-9.3.0-cp311-cp311-macosx_14_0_arm64.whl", hash = "sha256:c98faf190bb5daf1ad46a63c85a89b606c17dd063e0fd45e63f15182b708970a"},
-    {file = "mysqlx_connector_python-9.3.0-cp311-cp311-macosx_14_0_x86_64.whl", hash = "sha256:a74c96f58fa89d9546789a8292e5f5bc8142f33b48ec3bee82fbe78f21722d92"},
-    {file = "mysqlx_connector_python-9.3.0-cp311-cp311-manylinux_2_28_aarch64.whl", hash = "sha256:91a61b1a048f5657a4a2dbf8be8c8908b5d07ec85fac0a359907d945320eff16"},
-    {file = "mysqlx_connector_python-9.3.0-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha256:d65ed89fa0ef98f788c7997684d0c4055f1bd25f3ac1bf0130da2c9a9dfadf50"},
-    {file = "mysqlx_connector_python-9.3.0-cp311-cp311-win_amd64.whl", hash = "sha256:f112dd8170df872d3c36cd2371ab2ffc726a91de70a76f29a0c26af0f5f0a677"},
-    {file = "mysqlx_connector_python-9.3.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:c838122ac6051a77a3a9e555778fdb978063d1e30b41a4a2c5f99fb008599969"},
-    {file = "mysqlx_connector_python-9.3.0-cp312-cp312-macosx_14_0_x86_64.whl", hash = "sha256:f56203072549781d42732272344ab4fdf153817fee484453ded661c648056f8a"},
-    {file = "mysqlx_connector_python-9.3.0-cp312-cp312-manylinux_2_28_aarch64.whl", hash = "sha256:ca10747abf6d9cc0109d4372919ab18a040dfe454ba53dac7d381957cf5ecc56"},
-    {file = "mysqlx_connector_python-9.3.0-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:8c552114ef5a6e22f18897d2a7ccf4cb417689edd9f741145e9590cf906a226d"},
-    {file = "mysqlx_connector_python-9.3.0-cp312-cp312-win_amd64.whl", hash = "sha256:217b9df956c2be9d33288f3c2394ae4f65e2d33fcb0846ee5e81489625488ce9"},
-    {file = "mysqlx_connector_python-9.3.0-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:a23039d81081031ac289060ac9bbdaaa9565c539568ef8407806de23a605ebc0"},
-    {file = "mysqlx_connector_python-9.3.0-cp313-cp313-macosx_14_0_x86_64.whl", hash = "sha256:13578dabe613e786285e1972fcedf029079610e4c2032ba9cbbabe2a1c03ba22"},
-    {file = "mysqlx_connector_python-9.3.0-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:c4649c4fe5126d5963dac8d3be7460fcbf2999adda969c48e8aa9fe4e86ccfe1"},
-    {file = "mysqlx_connector_python-9.3.0-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:82522c3d9305d303d8a3adcac7b270801c3684abd37495e46d062a1323d7632e"},
-    {file = "mysqlx_connector_python-9.3.0-cp313-cp313-win_amd64.whl", hash = "sha256:50c129559c22150049e03751e538b33b7f242a9c1601cc728048eb8f69519799"},
-    {file = "mysqlx_connector_python-9.3.0-cp39-cp39-macosx_14_0_arm64.whl", hash = "sha256:6163f122e6f67f8457aa9003c51049481698b914e5a00cc8c3a9f27b1dac6e72"},
-    {file = "mysqlx_connector_python-9.3.0-cp39-cp39-macosx_14_0_x86_64.whl", hash = "sha256:7c44110687826539705cfc149d4c30bf46276f8e3b6dadfc049e79fa31993a1f"},
-    {file = "mysqlx_connector_python-9.3.0-cp39-cp39-manylinux_2_28_aarch64.whl", hash = "sha256:df63f68f6494f15f6496eb68faddf59b420bdfe71f094e5f0f0dbecbc273d02c"},
-    {file = "mysqlx_connector_python-9.3.0-cp39-cp39-manylinux_2_28_x86_64.whl", hash = "sha256:0c7fbb4d75bdab2ea8cedef7d6597af9dbf4038931f3348eae4133ddf5d98883"},
-    {file = "mysqlx_connector_python-9.3.0-cp39-cp39-win_amd64.whl", hash = "sha256:60584cd740bbb740aeadf3e19b24bb0c4544c968997196efe146a96000a9460d"},
-    {file = "mysqlx_connector_python-9.3.0-py2.py3-none-any.whl", hash = "sha256:bfb1a1561ed47b78cf0c7a878a2ce76168d5380ff812d85114c4de16d245ac31"},
-]
-
-[package.dependencies]
-protobuf = "4.25.3"
-
-[package.extras]
-compression = ["lz4 (>=2.1.6,<=4.3.2)", "zstandard (==0.23.0)"]
-dns-srv = ["dnspython (==2.6.1)"]
-
-[[package]]
-name = "protobuf"
-version = "4.25.3"
-description = ""
-optional = false
-python-versions = ">=3.8"
-groups = ["main"]
-files = [
-    {file = "protobuf-4.25.3-cp310-abi3-win32.whl", hash = "sha256:d4198877797a83cbfe9bffa3803602bbe1625dc30d8a097365dbc762e5790faa"},
-    {file = "protobuf-4.25.3-cp310-abi3-win_amd64.whl", hash = "sha256:209ba4cc916bab46f64e56b85b090607a676f66b473e6b762e6f1d9d591eb2e8"},
-    {file = "protobuf-4.25.3-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:f1279ab38ecbfae7e456a108c5c0681e4956d5b1090027c1de0f934dfdb4b35c"},
-    {file = "protobuf-4.25.3-cp37-abi3-manylinux2014_aarch64.whl", hash = "sha256:e7cb0ae90dd83727f0c0718634ed56837bfeeee29a5f82a7514c03ee1364c019"},
-    {file = "protobuf-4.25.3-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:7c8daa26095f82482307bc717364e7c13f4f1c99659be82890dcfc215194554d"},
-    {file = "protobuf-4.25.3-cp38-cp38-win32.whl", hash = "sha256:f4f118245c4a087776e0a8408be33cf09f6c547442c00395fbfb116fac2f8ac2"},
-    {file = "protobuf-4.25.3-cp38-cp38-win_amd64.whl", hash = "sha256:c053062984e61144385022e53678fbded7aea14ebb3e0305ae3592fb219ccfa4"},
-    {file = "protobuf-4.25.3-cp39-cp39-win32.whl", hash = "sha256:19b270aeaa0099f16d3ca02628546b8baefe2955bbe23224aaf856134eccf1e4"},
-    {file = "protobuf-4.25.3-cp39-cp39-win_amd64.whl", hash = "sha256:e3c97a1555fd6388f857770ff8b9703083de6bf1f9274a002a332d65fbb56c8c"},
-    {file = "protobuf-4.25.3-py3-none-any.whl", hash = "sha256:f0700d54bcf45424477e46a9f0944155b46fb0639d69728739c0e47bab83f2b9"},
-    {file = "protobuf-4.25.3.tar.gz", hash = "sha256:25b5d0b42fd000320bd7830b349e3b696435f3b329810427a6bcce6a5492cc5c"},
-]
-
-[[package]]
 name = "pydantic"
 version = "2.11.4"
 description = "Data validation using Python type hints"
@@ -1372,4 +1307,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "1daa81b719397e2b5767ee5aebe2083aa6622fef413a3b07562bd0626a22c36a"
+content-hash = "10433de73c30fc4b150cf8b1e44ad65ca8e5769ca1a7e00efea82b97862722dd"
