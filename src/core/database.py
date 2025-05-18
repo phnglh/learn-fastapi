@@ -4,7 +4,7 @@ from sqlmodel import SQLModel,Session,create_engine
 
 engine = create_engine(str(settings.SQLMODEL_DATABASE_URI()))
 
-def init_db(session: Session) -> None:
+def init_db() -> None:
     SQLModel.metadata.create_all(bind=engine)
 
 def check_connection():
