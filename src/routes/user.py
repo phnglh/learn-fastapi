@@ -122,7 +122,7 @@ def delete_user_me(session: SessionDep, current_user: CurrentUser) -> Any:
     return Message(message="User deleted successfully")
 
 
-@router.post("/signup", response_model=UserPublic)
+@router.post("/signup", response_model=UserPublic, tags=["auth"])
 def register_user(session: SessionDep, user_in: UserRegister) -> Any:
     existing_user = get_user_by_email(session, user_in.email)
     if existing_user:

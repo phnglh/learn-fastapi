@@ -3,7 +3,7 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException
 from sqlmodel import func, select
-from app.deps import CurrentUser, SessionDep
+from src.app.deps import CurrentUser, SessionDep
 from src.models.item import Item, ItemCreate, ItemPublic, ItemsPublic, ItemUpdate
 from src.models.message import Message
 
